@@ -30,11 +30,7 @@ public class PopupActivity extends Activity {
 
     public void onBottom(View view) {
         View menuView = View.inflate(this, R.layout.publish_dialog, null);
-        PopupWindow popupWindow = new PopupWindow(this);
-        popupWindow.setWidth(WindowManager.LayoutParams.MATCH_PARENT);
-        popupWindow.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
-        popupWindow.setContentView(menuView);
-     //   PopupWindow popupWindow = new PopupWindow(menuView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        PopupWindow popupWindow = new PopupWindow(menuView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
         popupWindow.setFocusable(true);
         popupWindow.setOutsideTouchable(true);
         popupWindow.setBackgroundDrawable(new ColorDrawable(0xb0000000));
