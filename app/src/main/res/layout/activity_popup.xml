@@ -5,9 +5,34 @@
     android:layout_height="match_parent">
 
     <Button
-        android:onClick="onRight"
+        android:id="@+id/btn_flag"
         android:layout_gravity="right"
+        android:text="这个地方"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="弹出"/>
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onBottom"
+        android:text="底部弹出"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="onCenter"
+        android:text="中间弹出"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onTop"
+        android:text="顶部弹出"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/here"
+        android:onClick="onHere"
+        android:text="这里"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
